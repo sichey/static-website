@@ -130,6 +130,14 @@ h1, h2, h3 { font-family: var(--font-display); margin: 0 0 0.5em; line-height: 1
   align-items: center;
   padding: 72px 24px 88px;
 }
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  margin-bottom: 20px;
+}
 .hero-kicker {
   font-family: var(--font-mono);
   font-size: 0.85rem;
