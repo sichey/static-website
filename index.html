@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sichey — build log</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">sichey<span class="cursor">_</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#status">status</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark mode" title="Toggle theme">
+      <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="hero-kicker">student developer / builder of small useful things</p>
+      <h1>I write code that solves the annoying, everyday problem.</h1>
+      <p class="hero-sub">Four working apps, one GitHub profile, zero patience for messy files. This page is itself the assignment — HTML, CSS and JavaScript, hand-built and pushed live with GitHub Pages.</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="#projects">See the projects</a>
+        <a class="btn btn-ghost" href="https://github.com/sichey" target="_blank" rel="noopener">github.com/sichey</a>
+      </div>
+    </div>
+
+    <div class="terminal-card" aria-label="live status panel">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">status.sh</span>
+      </div>
+      <div class="terminal-body">
+        <p class="term-line"><span class="prompt">$</span> whoami</p>
+        <p class="term-out">Christopher John P. Rigor — Student<br> Caloocan City, Philippines</p>
+        <p class="term-line"><span class="prompt">$</span> date --now</p>
+        <p class="term-out" id="live-clock">--:--:--</p>
+        <p class="term-out muted" id="live-date">loading date…</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="wrap">
+      <h2>About this build</h2>
+      <p class="section-lede">A quick profile, for anyone grading this or just passing through.</p>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>This site was built as part of a web fundamentals activity: structure the page with HTML, style it with CSS, and bring it to life with JavaScript — then publish it where anyone with a link can open it.</p>
+          <p>The projects below are real repositories, each one built to fix a small, specific problem: a messy downloads folder, a personal journal that wanted a home, a video store that needed a ledger, a mood that needed tracking.</p>
+        </div>
+        <div class="about-stack">
+          <h3>Toolbox</h3>
+          <ul class="tag-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="section-lede">A handful of repositories worth pointing to.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path>
+            <path d="M12 12v4M10 14h4"></path>
+          </svg>
+          <h3>File Organizer</h3>
+          <p>A script that sorts a cluttered folder into place automatically, by file type, so downloads stop piling up.</p>
+          <a class="project-link" href="https://github.com/sichey/File-Organizer" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M6 4h11a2 2 0 0 1 2 2v13a1 1 0 0 1-1.5.87L15 18l-2.5 1.87L10 18l-2.5 1.87L5 18V6a2 2 0 0 1 1-1.73"></path>
+            <path d="M9 8h6M9 11h6M9 14h4"></path>
+          </svg>
+          <h3>Journal · Wailing Well</h3>
+          <p>A personal journaling project named after a place in a story — a quiet space for writing entries down and keeping them.</p>
+          <a class="project-link" href="https://github.com/sichey/Journal-Wailing-Well" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="2" y="7" width="14" height="10" rx="1.5"></rect>
+            <path d="M16 10.5 22 8v8l-6-2.5"></path>
+          </svg>
+          <h3>BlockBustah</h3>
+          <p>A video rental tracker built for a made-up store called BlockBustah — check tapes in, check tapes out, keep the shelf honest.</p>
+          <a class="project-link" href="https://github.com/sichey/Video-Rental--BlockBustah-" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="project-card">
+          <svg class="project-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 21s-7-4.6-9.3-9.1C1.3 8.6 3 5.5 6.2 5.1c1.9-.2 3.4.8 4.3 2 .9-1.2 2.4-2.2 4.3-2 3.2.4 4.9 3.5 3.5 6.8C19 16.4 12 21 12 21z"></path>
+          </svg>
+          <h3>Mood Tracker</h3>
+          <p>A lightweight log for daily mood entries, built to notice patterns over a week or a month rather than a single bad day.</p>
+          <a class="project-link" href="https://github.com/sichey/Mood-Tracker" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="status" class="section status">
+    <div class="wrap status-grid">
+
+      <div class="status-block">
+        <h2>Countdown</h2>
+        <p class="section-lede">Time left until New Year — every project gets a fresh start.</p>
+        <div class="countdown" id="countdown">
+          <div class="count-unit"><span id="cd-days">00</span><label>days</label></div>
+          <div class="count-unit"><span id="cd-hours">00</span><label>hours</label></div>
+          <div class="count-unit"><span id="cd-minutes">00</span><label>minutes</label></div>
+          <div class="count-unit"><span id="cd-seconds">00</span><label>seconds</label></div>
+        </div>
+      </div>
+
+      <div class="status-block">
+        <h2>Need a nudge?</h2>
+        <p class="section-lede">Click for a short, honest piece of coding advice.</p>
+        <button id="tip-btn" class="btn btn-primary">Give me a tip</button>
+        <p id="tip-output" class="tip-output">Your tip will show up here.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p class="section-lede">Open an issue, star a repo, or say hello.</p>
+      <ul class="contact-list">
+        <li><a href="https://github.com/sichey" target="_blank" rel="noopener">GitHub profile</a></li>
+        <li><a href="https://github.com/sichey?tab=repositories" target="_blank" rel="noopener">All repositories</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Built with HTML, CSS and JavaScript, published with GitHub Pages.</p>
+    <p class="footer-meta">© <span id="year"></span> sichey</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
